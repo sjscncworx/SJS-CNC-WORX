@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - SJS CNC WORX</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <svg class="logo-svg" viewBox="0 0 120 140" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <filter id="glow-logo">
+                            <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+                            <feMerge>
+                                <feMergeNode in="coloredBlur"/>
+                                <feMergeNode in="SourceGraphic"/>
+                            </feMerge>
+                        </filter>
+                    </defs>
+                    <!-- Border -->
+                    <rect x="8" y="8" width="104" height="124" fill="none" stroke="#BFFF00" stroke-width="3" filter="url(#glow-logo)"/>
+                    <!-- SJS Text (White) -->
+                    <text x="60" y="35" font-family="Inter, sans-serif" font-size="24" font-weight="900" text-anchor="middle" fill="white" letter-spacing="1">SJS</text>
+                    <!-- CNC Text (Lime Green) -->
+                    <text x="60" y="75" font-family="Inter, sans-serif" font-size="28" font-weight="900" text-anchor="middle" fill="#BFFF00" letter-spacing="2">CNC</text>
+                    <!-- WORX Text (Lime Green) -->
+                    <text x="60" y="115" font-family="Inter, sans-serif" font-size="22" font-weight="900" text-anchor="middle" fill="#BFFF00" letter-spacing="1.5">WORX</text>
+                </svg>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <h1>Get In <span class="highlight">Touch</span></h1>
+            <p class="section-subtitle">We'd love to hear from you. Send us a message!</p>
+
+            <div class="contact-content">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    
+                    <div class="contact-item">
+                        <h3>📞 WhatsApp</h3>
+                        <p><a href="https://wa.me/27768239637" target="_blank">076 823 9637</a></p>
+                        <p class="contact-desc">Quick response via WhatsApp</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>📧 Email</h3>
+                        <p><a href="mailto:storm@sjscnc.com">storm@sjscnc.com</a></p>
+                        <p class="contact-desc">Send us your project details</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>🔗 Social Media</h3>
+                        <p>
+                            <a href="https://facebook.com/sjscncworx" target="_blank">Facebook: SJS CNC WORX</a><br>
+                            <a href="https://instagram.com/sjscncworx_pty_ltd" target="_blank">Instagram: sjscncworx_pty_ltd</a>
+                        </p>
+                        <p class="contact-desc">Follow us for updates and project showcases</p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>👤 Director</h3>
+                        <p>Storm John Van Schalkwyk</p>
+                        <p class="contact-desc">Founder & Director</p>
+                    </div>
+
+                    <div class="hours-box">
+                        <h3>Operating Hours</h3>
+                        <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
+                        <p>Saturday: 9:00 AM - 2:00 PM</p>
+                        <p>Sunday: Closed</p>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h2>Send us a Message</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Service Interest *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="cnc-milling">CNC Milling</option>
+                                <option value="cnc-turning">CNC Turning</option>
+                                <option value="model-design">Model Design & Drawings</option>
+                                <option value="programming">CNC Programming</option>
+                                <option value="wire-cutting">Wire Cutting (EDM)</option>
+                                <option value="tool-supply">Tool & Equipment Supply</option>
+                                <option value="fabrication">Fabrication Outsourcing</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Project Details *</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="cta-btn">Send Message</button>
+                    </form>
+                    <p class="form-note">* Required fields</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>📞 WhatsApp: <a href="https://wa.me/27768239637">076 823 9637</a></p>
+                    <p>📧 Email: <a href="mailto:storm@sjscnc.com">storm@sjscnc.com</a></p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <p>🔗 <a href="https://facebook.com/sjscncworx" target="_blank">Facebook</a> - SJS CNC WORX</p>
+                    <p>📸 <a href="https://instagram.com/sjscncworx_pty_ltd" target="_blank">Instagram</a> - sjscncworx_pty_ltd</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Director</h4>
+                    <p>Storm John Van Schalkwyk</p>
+                    <p><small>© 2024 SJS CNC WORX. All rights reserved.</small></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
